@@ -1,0 +1,28 @@
+.SOuter{
+	width:306px;
+	height:306px;
+	border-spacing:0;
+	text-align:center;
+	-webkit-user-select:none;
+}
+
+.SInner{
+	width:102px;
+	height:102px;
+	border-spacing:0;
+}
+
+.SOuter_S{
+	width:216px;
+	height:216px;
+	border-spacing:0;
+	font-size:14px;
+	text-align:center;
+	-webkit-user-select:none;
+}
+
+.SInner_S{
+	width:72px;
+	height:72px;
+	border-spacing:0;
+}

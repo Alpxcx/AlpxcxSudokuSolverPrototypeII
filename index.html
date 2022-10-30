@@ -1,0 +1,106 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+ 
+<html xmlns="http://www.w3.org/1999/xhtml">
+ 
+<head>
+  <meta charset="utf-8"/>
+  <title>Alpxcx Sudoku Solver Prototype II</title>
+	<script src="ui.js"></script>
+	<script src="main.js"></script>
+  <link rel="stylesheet" type="text/css" href="sudoku.css"/>
+  <script>
+  	
+  </script>
+</head>
+ 
+<body>
+	<h2>A Sudoku Solver by Alpxcx</h2><br/>
+	<div style="width:600px">
+		A sudoku solver created on 2022. As most sudoku solvers were not based on human arithmetic but boring robotic logic and endless trials, this solver tries to avoid any trials out of human distinct.
+	</div><br/>
+	
+	<table class="SOuter_S" cellpadding="0">
+			<tr>
+				<td><table class="SInner_S" border="1" cellpadding="0"><tr><td>1</td><td>2</td><td>3</td></tr><tr><td>4</td><td>5</td><td>6</td></tr><tr><td>7</td><td>8</td><td>9</td></tr></table></td>
+		
+				<td><table class="SInner_S" border="1" cellpadding="0"><tr><td>1</td><td>2</td><td>3</td></tr><tr><td>4</td><td>5</td><td>6</td></tr><tr><td>7</td><td>8</td><td>9</td></tr></table></td>
+		
+				<td><table class="SInner_S" border="1" cellpadding="0"><tr><td>1</td><td>2</td><td>3</td></tr><tr><td>4</td><td>5</td><td>6</td></tr><tr><td>7</td><td>8</td><td>9</td></tr></table></td>
+			</tr>
+			<tr>
+				<td><table class="SInner_S" border="1" cellpadding="0"><tr><td>1</td><td>2</td><td>3</td></tr><tr><td>4</td><td>5</td><td>6</td></tr><tr><td>7</td><td>8</td><td>9</td></tr></table></td>
+		
+				<td><table class="SInner_S" border="1" cellpadding="0"><tr><td>1</td><td>2</td><td>3</td></tr><tr><td>4</td><td>5</td><td>6</td></tr><tr><td>7</td><td>8</td><td>9</td></tr></table></td>
+		
+				<td><table class="SInner_S" border="1" cellpadding="0"><tr><td>1</td><td>2</td><td>3</td></tr><tr><td>4</td><td>5</td><td>6</td></tr><tr><td>7</td><td>8</td><td>9</td></tr></table></td>
+			</tr>
+			<tr>
+				<td><table class="SInner_S" border="1" cellpadding="0"><tr><td>1</td><td>2</td><td>3</td></tr><tr><td>4</td><td>5</td><td>6</td></tr><tr><td>7</td><td>8</td><td>9</td></tr></table></td>
+		
+				<td><table class="SInner_S" border="1" cellpadding="0"><tr><td>1</td><td>2</td><td>3</td></tr><tr><td>4</td><td>5</td><td>6</td></tr><tr><td>7</td><td>8</td><td>9</td></tr></table></td>
+		
+				<td><table class="SInner_S" border="1" cellpadding="0"><tr><td>1</td><td>2</td><td>3</td></tr><tr><td>4</td><td>5</td><td>6</td></tr><tr><td>7</td><td>8</td><td>9</td></tr></table></td>
+			</tr>
+	</table>
+	
+	<table cellspacing="40">
+		<tr>
+			<td>
+      	<table class="SOuter" cellpadding="0">
+      			<tr>
+      				<td><table class="SInner" border="1" cellpadding="0"><tr><td>1</td><td>2</td><td>3</td></tr><tr><td>4</td><td>5</td><td>6</td></tr><tr><td>7</td><td>8</td><td>9</td></tr></table></td>
+      		
+      				<td><table class="SInner" border="1" cellpadding="0"><tr><td>1</td><td>2</td><td>3</td></tr><tr><td>4</td><td>5</td><td>6</td></tr><tr><td>7</td><td>8</td><td>9</td></tr></table></td>
+      		
+      				<td><table class="SInner" border="1" cellpadding="0"><tr><td>1</td><td>2</td><td>3</td></tr><tr><td>4</td><td>5</td><td>6</td></tr><tr><td>7</td><td>8</td><td>9</td></tr></table></td>
+      			</tr>
+      			<tr>
+      				<td><table class="SInner" border="1" cellpadding="0"><tr><td>1</td><td>2</td><td>3</td></tr><tr><td>4</td><td>5</td><td>6</td></tr><tr><td>7</td><td>8</td><td>9</td></tr></table></td>
+      		
+      				<td><table class="SInner" border="1" cellpadding="0"><tr><td>1</td><td>2</td><td>3</td></tr><tr><td>4</td><td>5</td><td>6</td></tr><tr><td>7</td><td>8</td><td>9</td></tr></table></td>
+      		
+      				<td><table class="SInner" border="1" cellpadding="0"><tr><td>1</td><td>2</td><td>3</td></tr><tr><td>4</td><td>5</td><td>6</td></tr><tr><td>7</td><td>8</td><td>9</td></tr></table></td>
+      			</tr>
+      			<tr>
+      				<td><table class="SInner" border="1" cellpadding="0"><tr><td>1</td><td>2</td><td>3</td></tr><tr><td>4</td><td>5</td><td>6</td></tr><tr><td>7</td><td>8</td><td>9</td></tr></table></td>
+      		
+      				<td><table class="SInner" border="1" cellpadding="0"><tr><td>1</td><td>2</td><td>3</td></tr><tr><td>4</td><td>5</td><td>6</td></tr><tr><td>7</td><td>8</td><td>9</td></tr></table></td>
+      		
+      				<td><table class="SInner" border="1" cellpadding="0"><tr><td>1</td><td>2</td><td>3</td></tr><tr><td>4</td><td>5</td><td>6</td></tr><tr><td>7</td><td>8</td><td>9</td></tr></table></td>
+      			</tr>
+      	</table>
+			</td>
+			<td>
+      	<table class="SOuter" cellpadding="0">
+      			<tr>
+      				<td><table class="SInner" border="1" cellpadding="0"><tr><td>1</td><td>2</td><td>3</td></tr><tr><td>4</td><td>5</td><td>6</td></tr><tr><td>7</td><td>8</td><td>9</td></tr></table></td>
+      		
+      				<td><table class="SInner" border="1" cellpadding="0"><tr><td>1</td><td>2</td><td>3</td></tr><tr><td>4</td><td>5</td><td>6</td></tr><tr><td>7</td><td>8</td><td>9</td></tr></table></td>
+      		
+      				<td><table class="SInner" border="1" cellpadding="0"><tr><td>1</td><td>2</td><td>3</td></tr><tr><td>4</td><td>5</td><td>6</td></tr><tr><td>7</td><td>8</td><td>9</td></tr></table></td>
+      			</tr>
+      			<tr>
+      				<td><table class="SInner" border="1" cellpadding="0"><tr><td>1</td><td>2</td><td>3</td></tr><tr><td>4</td><td>5</td><td>6</td></tr><tr><td>7</td><td>8</td><td>9</td></tr></table></td>
+      		
+      				<td><table class="SInner" border="1" cellpadding="0"><tr><td>1</td><td>2</td><td>3</td></tr><tr><td>4</td><td>5</td><td>6</td></tr><tr><td>7</td><td>8</td><td>9</td></tr></table></td>
+      		
+      				<td><table class="SInner" border="1" cellpadding="0"><tr><td>1</td><td>2</td><td>3</td></tr><tr><td>4</td><td>5</td><td>6</td></tr><tr><td>7</td><td>8</td><td>9</td></tr></table></td>
+      			</tr>
+      			<tr>
+      				<td><table class="SInner" border="1" cellpadding="0"><tr><td>1</td><td>2</td><td>3</td></tr><tr><td>4</td><td>5</td><td>6</td></tr><tr><td>7</td><td>8</td><td>9</td></tr></table></td>
+      		
+      				<td><table class="SInner" border="1" cellpadding="0"><tr><td>1</td><td>2</td><td>3</td></tr><tr><td>4</td><td>5</td><td>6</td></tr><tr><td>7</td><td>8</td><td>9</td></tr></table></td>
+      		
+      				<td><table class="SInner" border="1" cellpadding="0"><tr><td>1</td><td>2</td><td>3</td></tr><tr><td>4</td><td>5</td><td>6</td></tr><tr><td>7</td><td>8</td><td>9</td></tr></table></td>
+      			</tr>
+      	</table>
+			</td>
+		</tr>
+	</table>
+  	
+  
+</body>
+ 
+</html>
